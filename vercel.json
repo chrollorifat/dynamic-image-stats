@@ -3,11 +3,11 @@
   "outputDirectory": "dist",
   "framework": "nextjs",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    { "source": "/app/(.*)", "destination": "/app/$1" }
   ],
   "headers": [
     {
-      "source": "/api/card",
+      "source": "/app/card",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         { "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=600" }
